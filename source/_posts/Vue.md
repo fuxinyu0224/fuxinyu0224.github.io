@@ -3,6 +3,7 @@ title: Vue
 date: 2022-07-10 10:59:42
 tags: vue
 categories: vue
+top: true
 ---
 ##### vue基本概念
 
@@ -29,6 +30,8 @@ categories: vue
 ##### vue生命周期图示
 
 ![](https://fxytb.oss-cn-nanjing.aliyuncs.com/vue/images/lifecycle.svg)
+
+<!--more-->
 
 ##### 生命周期函数
 
