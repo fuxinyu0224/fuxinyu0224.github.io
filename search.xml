@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git</title>
+    <url>/2022/07/12/Git/</url>
+    <content><![CDATA[<h2 id="git概述"><a href="#git概述" class="headerlink" title="git概述"></a>git概述</h2><h3 id="什么是git"><a href="#什么是git" class="headerlink" title="什么是git"></a>什么是git</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git 是一种分布式的版本控制系统</span><br><span class="line">可以清楚的记录每一个文件是什么时候加进来的,什么时候被修改或删除的</span><br></pre></td></tr></table></figure>
+
+<h2 id="为什么要学git"><a href="#为什么要学git" class="headerlink" title="为什么要学git"></a>为什么要学git</h2><h3 id="git的优点"><a href="#git的优点" class="headerlink" title="git的优点"></a>git的优点</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">免费开源</span><br><span class="line">    2005年为了管理Linux内核程序代码,Linux内核的作者Linus Trovalds 仅用了10天时间就开发出了Git,粗略算来git至今已有十几年的历史了.</span><br><span class="line">    除了可以免费使用外,整个Git的源代码也可以在互联网上获取 (当然Git的源代码也是用Git做版本控制的).</span><br><span class="line">速度快、文件体积小</span><br><span class="line">    其他的版本控制系统,是记录每个版本之间的差异,而不是完整的备份目录,所以整个目录的大小不会快速地增加.</span><br><span class="line">    Git的特别之处在于,他并不是记录版本的差异,而是记录文件内容的 &quot;快照&quot; ,可以非常快速的切换版本</span><br><span class="line">分布式系统</span><br><span class="line">    其他版本控制系统如CVS或者SVN之类的集中式的版本控制系统,都需要有一台专用的服务器,所有的更新都要与这台服务器沟通,也就是说一旦这条服务器坏了,</span><br><span class="line">    或者处于没有网络连线的环境下,就无法使用了.</span><br><span class="line">    Git 是一款分布式的版本控制系统,虽然通常也会有共同的服务器,但即使在没有服务器或者在没有网络的环境下,仍然可以使用Git进行版本控制,</span><br><span class="line">    待服务器恢复正常运行或移动到有网络的环境后在进行同步,不会收到影响,事实上在使用git的过程中,大多数的Git操作在计算机本机上就可以完成</span><br></pre></td></tr></table></figure>
+
+<h3 id="git的缺点"><a href="#git的缺点" class="headerlink" title="git的缺点"></a>git的缺点</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">易学难精</span><br><span class="line">    虽然Git的指令非常多,而且有的指令有点复杂,但平时使用到机会并不多. 根据&quot;80/20法则&quot;,大概20%的指令就可以应付80%的工作</span><br></pre></td></tr></table></figure>
+
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">我是设计师,也可以用git吗 ?</span><br><span class="line">	只有是文件,都可以用Git进行管理.至少当文件不小心被覆盖或者删除的时候,还可以找回旧版本</span><br><span class="line">Git就是我之前看到过的Github吗 ?</span><br><span class="line">    Git是一款版本控制系统,而Github是一个商业网站,其本体是一个Git服务器,</span><br><span class="line">    Github的应用程序可以让大家通过Web操作来完成一些原本需要复杂的Git指令才能做到的事</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue</title>
     <url>/2022/07/10/Vue/</url>
     <content><![CDATA[<h5 id="vue基本概念"><a href="#vue基本概念" class="headerlink" title="vue基本概念"></a>vue基本概念</h5>   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. mvvm设计模式</span><br><span class="line">   m-&gt;model 数据 v-&gt; views视图 vm-&gt;viewModle 数据视图连接层</span><br><span class="line">2. 服务器端渲染</span><br><span class="line">   vue.js服务端渲染是在浏览器中输出Vue组件，进行生成DOM和操作DOM,</span><br><span class="line">   然而，也可以将同一个组件渲染为服务器端的HTML字符串，将它们直接发送到浏览器,</span><br><span class="line">   最后将这些静态标记&quot;激活&quot;为客户端上完全可交互的应用程序。</span><br><span class="line">3. 挂载</span><br><span class="line">   虚拟dom与真实dom建立关系，让Vue实例控制页面中的某个区域的过程，称之为挂载。</span><br><span class="line">   挂载的方式有：</span><br><span class="line">   	1、通过“el:&#x27;css选择器&#x27;”语句进行配置；</span><br><span class="line">   	2、通过“Vue实例.$mount(&quot;css选择器&quot;)”语句进行配置。</span><br><span class="line">4.render函数和template</span><br><span class="line">	template:</span><br><span class="line">		一个字符串模板，用作 component 实例的标记。模板将会替换所挂载元素的 innerHTML。</span><br><span class="line">		挂载元素的任何现有标记都将被忽略，除非模板中存在通过插槽分发的内容。</span><br><span class="line">		如果字符串以 # 开始，则它将被用作 querySelector，并使用匹配元素的 innerHTML 作为模板字符串。</span><br><span class="line">		这允许使用常见的 &lt;script type=&quot;x-template&quot;&gt; 技巧来包含模板。</span><br><span class="line">	render:</span><br><span class="line">		字符串模板之外的另一种选择，允许你充分利用 JavaScript 的编程功能。</span><br><span class="line">    	render 函数的优先级高于根据 template 选项或挂载元素的 DOM 内 HTML 模板编译的渲染函数。</span><br></pre></td></tr></table></figure>
